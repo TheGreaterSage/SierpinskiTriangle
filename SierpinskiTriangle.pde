@@ -17,6 +17,7 @@ public void sierpinski(int x, int y, int len)
 {
     if(len <= 20) {
         triangle(x, y, x+len, y, x+len/2, y-len);
+        fill(20*len, 255/len, len);
     }
     else {
         sierpinski(x, y, len/2);
