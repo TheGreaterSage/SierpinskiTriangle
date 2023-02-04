@@ -11,14 +11,13 @@ public void draw()
 }
 public void mouseDragged()//optional
 {
-  len = int(map(mouseX, 0, width, 1, 10));
 }
 public void sierpinski(int x, int y, int len) 
 {
     int setter = 20;
     if(len <= setter) {
         triangle(x, y, x+len, y, x+len/2, y-len);
-        fill(20*len, 255/len, len);
+        fill(setter*len, 255/len, len);
         
     }
     else {
