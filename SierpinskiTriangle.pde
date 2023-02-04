@@ -3,15 +3,16 @@ public void setup()
   size(500,500);
   background(255);
   smooth();
+  noStroke();
   fill(50);
 }
 public void draw()
 { 
-    sierpinski(200, 200, int(map(mouseX, 0, width, 1, 10)));
+    sierpinski(200, 200, 100);
 }
 public void mouseDragged()//optional
 {
-
+  len += int(map(mouseX, 0, width, 1, 10));
 }
 public void sierpinski(int x, int y, int len) 
 {
