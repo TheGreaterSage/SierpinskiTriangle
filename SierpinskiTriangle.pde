@@ -11,7 +11,7 @@ public void draw()
 }
 public void mouseDragged()//optional
 {
-  len += int(map(mouseX, 0, width, 1, 10));
+  len = int(map(mouseX, 0, width, 1, 10));
 }
 public void sierpinski(int x, int y, int len) 
 {
