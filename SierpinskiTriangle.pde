@@ -7,7 +7,10 @@ public void setup()
 }
 public void draw()
 { 
-    sierpinski(200, 200, 100);
+  for(int i = 0; i < 250; i++) {
+    sierpinski(200, 200, 100 + i);
+    delay(10);
+    }
 }
 public void mouseDragged()//optional
 {
