@@ -7,7 +7,7 @@ public void setup()
 }
 public void draw()
 { 
-    sierpinski(200, 200, 100);
+    sierpinski(200, 200, int(map(mouseX, 0, width, 1, 10)));
 }
 public void mouseDragged()//optional
 {
