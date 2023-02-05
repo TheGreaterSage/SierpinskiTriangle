@@ -9,7 +9,7 @@ public void draw()
 { 
   for(int i = 0; i < 250; i++) {
     sierpinski(200, 200, 100 + i);
-    sleep(100);
+    sleep(1000);
     }
 }
 public void mouseDragged()//optional
